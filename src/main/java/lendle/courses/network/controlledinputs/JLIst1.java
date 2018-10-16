@@ -5,6 +5,7 @@
  */
 package lendle.courses.network.controlledinputs;
 
+import com.sun.org.apache.xalan.internal.xsltc.compiler.util.StringStack;
 import java.awt.BorderLayout;
 import javax.swing.JFrame;
 import javax.swing.JList;
@@ -29,6 +30,8 @@ public class JLIst1 {
         frame.setLayout(new BorderLayout());
         //create JList and add it to a JScrollPane
         JScrollPane scrollPane=new JScrollPane();
+        JList list=new JList(new String[]{"a","s","d","f","g","h","j","k","l","i","a","s","d","f","g","h","j","k","l","i"});
+        scrollPane.getViewport().add(list);
         //////////////////////////////////////////
         frame.add(scrollPane);
         
